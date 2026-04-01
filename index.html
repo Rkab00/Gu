@@ -48,13 +48,17 @@
             overflow: hidden;
         }
 
-        /* 1. 메인 제목 */
+        /* 1. 메인 제목 (박스형으로 수정) */
         .hero-section {
             position: relative;
             text-align: center;
-            padding: 90px 20px;
-            background: linear-gradient(to bottom, rgba(5,5,8,0.4), var(--bg-color));
-            border-bottom: 2px solid rgba(255, 85, 153, 0.5);
+            padding: 80px 20px;
+            margin: 40px 25px;
+            background: var(--card-bg);
+            border: 1px solid var(--neon-red);
+            box-shadow: 0 0 20px rgba(255, 85, 153, 0.15), inset 0 0 20px rgba(255, 85, 153, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
         }
 
         .hero-title {
@@ -291,11 +295,19 @@
             box-shadow: 0 0 5px rgba(0, 243, 255, 0.3);
         }
 
-        /* 5. 시작상황 줄거리 */
+        /* 5. 시작상황 줄거리 (박스형으로 수정) */
         .story-section {
-            background: linear-gradient(to top, rgba(255, 85, 153, 0.05), var(--bg-color));
-            text-align: center;
+            padding: 50px 25px;
             border-bottom: none;
+        }
+
+        .story-box {
+            background: var(--card-bg);
+            border: 1px solid var(--gold);
+            box-shadow: 0 0 20px rgba(0, 243, 255, 0.15), inset 0 0 20px rgba(0, 243, 255, 0.1);
+            border-radius: 10px;
+            padding: 40px 25px;
+            text-align: center;
         }
 
         .story-content {
@@ -332,7 +344,7 @@
         <!-- 1. 메인 제목 -->
         <header class="hero-section">
             <!--[이미지: 붉은 네온사인이 빛나는 비 오는 홍콩 구룡성채의 밤거리] -->
-            <img src="https://raw.githubusercontent.com/Rkab00/Gu/refs/heads/main/BG_1.png" alt="구룡성채 배경" class="img-placeholder" style="position: absolute; top:0; left:0; width:100%; height:100%; object-fit: cover; opacity: 0.3; z-index: 0;">
+            <img src="https://raw.githubusercontent.com/username/repo/main/kowloon_bg.jpg" alt="구룡성채 배경" class="img-placeholder" style="position: absolute; top:0; left:0; width:100%; height:100%; object-fit: cover; opacity: 0.3; z-index: 0;">
             <div style="position: relative; z-index: 1;">
                 <h1 class="hero-title">구룡 24시 해결사 사무소</h1>
                 <p class="hero-subtitle">"목숨값보다 총알 한 발이 비싼 도시, 당신의 의뢰를 환영합니다."</p>
@@ -382,7 +394,7 @@
                 <div class="char-card">
                     <div class="char-img-wrap">
                         <!--[이미지: 금사 자수 최고급 실크 치파오를 입고 곰방대를 든 나른하고 퇴폐적인 인상의 흑발 남성(백선생)] -->
-                        <img src="https://raw.githubusercontent.com/Rkab00/Gu/refs/heads/main/B_info.png" alt="백선생">
+                        <img src="https://raw.githubusercontent.com/username/repo/main/baek_portrait.jpg" alt="백선생">
                     </div>
                     <div class="char-info">
                         <div class="char-header">
@@ -397,6 +409,7 @@
                             <p><strong>• 분위기:</strong> 이질적·우아함 | 나른한 색기 | 짙은 백단향 + 약간의 비릿한 혈향</p>
                             <p><strong>• 성격:</strong> 세상만사 지루한 유희 | 물질만능주의 | 뻔뻔함 | 능글맞은 쾌락주의자 | 소시오패스 기질 | 관심 상대 한정 주접·플러팅 장인</p>
                             <p><strong>• 버릇:</strong> 나긋·교태로운 반말 + 천박한 섹드립 | 곰방대·손가락으로 입술 톡톡 | 상처받은 척 가짜 눈물 | 화날수록 목소리 다정&낮아짐</p>
+                            <p><strong>• 성적특징:</strong> 사디스트+도미넌트+보이어+디그레이더 | 여왕수(바텀) 기질 존재 | 하드코어 플레이 선호 | 뛰어난 테크닉</p>
                             <p><strong>• 과거사:</strong> 구룡성채 밑바닥 시체 구덩이 출신 고아. 5살까지 구덩이의 오물들을 파먹으며 살아남았고, 수많은 인간을 속이고 처리하며 아득바득 올라왔다. 끔찍한 과거를 지우듯 스스로를 '백(白)'이라 칭하며 본명을 극도로 혐오하고 철저히 숨긴다.</p>
                         </div>
                         <div class="tags">
@@ -409,7 +422,7 @@
                 <div class="char-card">
                     <div class="char-img-wrap">
                         <!--[이미지: 낡은 흰 셔츠에 서스펜더를 매고, 피로에 찌든 삼백안으로 담배를 물고 있는 거친 근육질 남성(레온)] -->
-                        <img src="https://raw.githubusercontent.com/Rkab00/Gu/refs/heads/main/R_info.png" alt="레온">
+                        <img src="https://raw.githubusercontent.com/username/repo/main/leon_portrait.jpg" alt="레온">
                     </div>
                     <div class="char-info">
                         <div class="char-header">
@@ -423,7 +436,8 @@
                             <p><strong>• 외형:</strong> 188cm | 탁한 잿빛 도는 흑갈색 머리(헝클어진 올백) | 피로에 찌든 탁한 회색빛 삼백안 | 왼뺨&몸 다수 칼자국 | 뼈대 굵은 실전 압축형 근육질 | 낡은 흰셔츠 + 서스펜더 + 가죽 숄더 홀스터</p>
                             <p><strong>• 분위기:</strong> 건조·피폐(하드보일드st) | 싸구려 담배 + 화약 매연 + 비에 젖은 가죽 냄새</p>
                             <p><strong>• 성격:</strong> 매사 심드렁&피곤 | 돈 낭비·헛소리 극혐 | 정상적 사고 유지 강박 | 보호적 책임감(강강약약) | 관심 상대 한정 잔소리 폭격기 츤데레</p>
-                            <p><strong>• 버릇:</strong> 틈나면 싸구려 담배 | 가계부&서류철 집착 | 틱틱대면서도 건강·안전 제일 먼저 챙김 | 관심 상대가 다정하게 대하면 귀 끝 붉어지며 시선 회피</p>  
+                            <p><strong>• 버릇:</strong> 틈나면 싸구려 담배 | 가계부&서류철 집착 | 틱틱대면서도 건강·안전 제일 먼저 챙김 | 관심 상대가 다정하게 대하면 귀 끝 붉어지며 시선 회피</p>
+                            <p><strong>• 성적특징:</strong> 프라이멀+도미넌트+약한 사디스트+마커&스팽커 | 거칠고 본능적인 행위 | 장소 불문 | 구강 성교 선호 | 짙은 잇자국·멍 마킹 습성 | 노골적인 더티토크</p>
                             <p><strong>• 과거사:</strong> 여동생의 약값 빚 때문에 사채업자에게 장기가 털리기 직전 백선생에게 주워졌다. 막대한 빚 탕감을 명목으로 묶인 사무소의 개이며, 백선생의 본명과 밑바닥 시절을 아는 유일한 인물이다. 지키려던 여동생은 사채업자에게 쫓기기 전에 이미 사망했다.</p>
                         </div>
                         <div class="tags">
@@ -438,11 +452,13 @@
         <!-- 5. 시작상황 줄거리 -->
         <section class="section story-section">
             <h2 class="section-title">PROLOGUE</h2>
-            <div class="story-content">
-                <p>비릿한 피 냄새와 싸구려 향신료 냄새가 뒤섞인 1988년의 밤.<br>당신은 모종의 이유로 구룡성채의 가장 깊고 축축한 골목으로 들어섰습니다.</p>
-                <p>총탄 자국이 빼곡한 무거운 철문을 열자, 짙은 백단향과 함께 두 남자가 당신을 맞이합니다.</p>
-                <p>금 곰방대를 든 채 나른하게 웃으며 당신의 목숨값을 흥정하는 우아한 사장,<br>그리고 무심한 시선으로 당신을 훑어보며 신경질적으로 가계부를 넘기는 조수.</p>
-                <p class="story-climax">"자, 어서 와. 의뢰비는 넉넉히 챙겨왔겠지?"</p>
+            <div class="story-box">
+                <div class="story-content">
+                    <p>비릿한 피 냄새와 싸구려 향신료 냄새가 뒤섞인 1988년의 밤.<br>당신은 모종의 이유로 구룡성채의 가장 깊고 축축한 골목으로 들어섰습니다.</p>
+                    <p>총탄 자국이 빼곡한 무거운 철문을 열자, 짙은 백단향과 함께 두 남자가 당신을 맞이합니다.</p>
+                    <p>금 곰방대를 든 채 나른하게 웃으며 당신의 목숨값을 흥정하는 우아한 사장,<br>그리고 무심한 시선으로 당신을 훑어보며 신경질적으로 가계부를 넘기는 조수.</p>
+                    <p class="story-climax">"자, 어서 와. 의뢰비는 넉넉히 챙겨왔겠지?"</p>
+                </div>
             </div>
         </section>
 
